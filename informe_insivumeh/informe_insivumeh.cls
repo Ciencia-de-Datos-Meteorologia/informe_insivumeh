@@ -63,6 +63,7 @@ bottom=2cm
 \newcommand{\tituloPeriodo}[1]{\gdef\@plazo{#1}}
 \newcommand{\nombre}[1]{\gdef\@name{#1}}
 \newcommand{\vobo}[1]{\gdef\@vobo{#1}}
+\newcommand{\puestoVobo}[1]{\gdef\@puestoVobo{#1}}
 
 
 \insivumeh{Instituto Nacional De Sismología, Vulcanología, Meteorología e Hidrología \---INSIVUMEH\---}
@@ -79,12 +80,13 @@ bottom=2cm
 \periodoInforme{Del 1 de enero al 31 de enero de 2025}
 \moneda{Q.}
 \tituloPeriodo{Honorarios Mensuales:}
-\vobo{Ing. Agr. Gustavo Samayoa}
+\vobo{Ing. Agr. Gustavo Alberto Samayoa López}
+\puestoVobo{Jefe del \@dep}
 
 \author{\@name}
 \title{Informe \@tipo\space de prestación de servicios, renglón \@reng}
 
-
+\def\dep{\@dep}
 \def\mensualtest{final}
 
 \renewcommand{\maketitle}{
@@ -136,47 +138,28 @@ bottom=2cm
 
 
 \newcommand{\firmas}{
-    \vspace*{15pt}
+    \vspace{15pt}
 
-    \begin{center}
-        
-    \begin{tabular}{C{30pt}cr}
-        (f) & \rule{200pt}{0.1pt}   &   \\
-            & \@author              &   \\
-            &                       &   \\
-        \multicolumn{3}{p{0.98\linewidth}}{
-            \vspace{5pt}
-            El presente informe responde a lo estipulado en el
-            contrato administrativo suscrito con el prestador de
-            servicios y sus respectivos términos de referencia,
-            asimismo, se encuentra recibido de conformidad, por lo que
-            se autoriza a quien corresponda, para que procedan al
-            trámite de pago respectivo.
-            \vspace{50pt}
-        }                               \\
-        Vo.Bo. & \rule{200pt}{0.1pt}   &   \\
-            & \@vobo              &   \\
-    \end{tabular}
+    \begin{center}   
+        \begin{tabular}{L{30pt}C{200pt}r}
+            (f) & \rule{\linewidth}{0.1pt}  &   \\
+                & \@author                  &   \\
+                &                           &   \\
+            \multicolumn{3}{p{0.98\linewidth}}{
+                \vspace{5pt}
+                El presente informe responde a lo estipulado en el
+                contrato administrativo suscrito con el prestador de
+                servicios y sus respectivos términos de referencia,
+                asimismo, se encuentra recibido de conformidad, por lo que
+                se autoriza a quien corresponda, para que procedan al
+                trámite de pago respectivo.
+                \vspace{50pt}
+            }                                   \\
+            Vo.Bo. & \rule{200pt}{0.1pt}    &   \\
+                & \@vobo                    &   \\
+                &
+                    \vspace{5pt}\begin{tabular}{C{150pt}} \small \@puestoVobo \end{tabular}
+                                            &   \\
+        \end{tabular}
     \end{center}
-    
-    \vspace*{15pt}
-
-    \begin{center}
-        
-    \begin{tabular}{p{0.98\linewidth}}
-    \noindent El presente informe responde a lo estipulado en el
-    contrato administrativo suscrito con el prestador de
-    servicios y sus respectivos términos de referencia,
-    asimismo, se encuentra recibido de conformidad, por lo que
-    se autoriza a quien corresponda, para que procedan al
-    trámite de pago respectivo.
-    \end{tabular}
-    \end{center}
-
-    \vspace*{50pt}
-
-    \begin{tabular}{C{30pt}c}
-        Vo.Bo.  & \rule{200pt}{0.1pt} \\
-                & \@vobo \\
-    \end{tabular}
 }
