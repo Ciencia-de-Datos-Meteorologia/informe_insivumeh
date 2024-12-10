@@ -1,0 +1,3 @@
+[submodule "LaTeX_template-INSIVUMEH_class"]
+	path = article_insivumeh
+	url = git@github.com:Ciencia-de-Datos-Meteorologia/LaTeX_template-INSIVUMEH_class.git
