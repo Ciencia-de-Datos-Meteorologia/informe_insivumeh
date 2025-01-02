@@ -54,6 +54,7 @@ bottom=2cm
 \newcommand{\renglon}[1]{\gdef\@reng{#1}}
 \newcommand{\noContrato}[1]{\gdef\@contrat{#1}}
 \newcommand{\cui}[1]{\gdef\@cui{#1}}
+\newcommand{\nit}[1]{\gdef\@nit{#1}}
 \newcommand{\servicios}[1]{\gdef\@serv{#1}}
 \newcommand{\montoTotal}[1]{\gdef\@totalQ{#1}}
 \newcommand{\honorarioMensual}[1]{\gdef\@monthQ{#1}}
@@ -100,7 +101,7 @@ bottom=2cm
                 \hline 
                 \textbf{Nombre completo del Contratista:} & \@author & \textbf{CUI:} & \@cui \\ 
                 \hline 
-                \textbf{Número de Contrato:} & \@contrat & \textbf{NIT del Contratista:} & 2 \\ 
+                \textbf{Número de Contrato:} & \@contrat & \textbf{NIT del Contratista:} & \@nit \\ 
                 \hline 
                 \textbf{Servicios (Técnicos o Profesionales):} &  \multicolumn{3}{l|}{Servicios \@serv}  \\ 
                 \hline 
@@ -121,7 +122,7 @@ bottom=2cm
                 \hline 
                 \textbf{Nombre completo del Contratista:} & \@author & \textbf{CUI:} & \@cui \\ 
                 \hline 
-                \textbf{Número de Contrato:} & \@contrat & \textbf{NIT del Contratista:} & 2 \\ 
+                \textbf{Número de Contrato:} & \@contrat & \textbf{NIT del Contratista:} & \@nit \\ 
                 \hline 
                 \textbf{Servicios (Técnicos o Profesionales):} &  \multicolumn{3}{l|}{Servicios \@serv}  \\ 
                 \hline 
