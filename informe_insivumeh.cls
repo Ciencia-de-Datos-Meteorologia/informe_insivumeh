@@ -81,8 +81,8 @@ bottom=2cm
 \periodoInforme{Del 1 de enero al 31 de enero de 2025}
 \moneda{Q.}
 \tituloPeriodo{Honorarios Mensuales:}
-\vobo{Ing. Agr. Gustavo Alberto Samayoa López}
-\puestoVobo{Jefe del \@dep}
+\vobo{}
+\puestoVobo{}
 
 \author{\@name}
 \title{Informe \@tipo\space de prestación de servicios, renglón \@reng}
