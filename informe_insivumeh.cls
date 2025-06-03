@@ -158,9 +158,7 @@ bottom=2cm
             }                                   \\
             Vo.Bo. & \rule{200pt}{0.1pt}    &   \\
                 & \@vobo                    &   \\
-                &
-                    \vspace{5pt}\begin{tabular}{C{150pt}} \small \@puestoVobo \end{tabular}
-                                            &   \\
+                & \@puestoVobo              &   \\
         \end{tabular}
     \end{center}
 }
