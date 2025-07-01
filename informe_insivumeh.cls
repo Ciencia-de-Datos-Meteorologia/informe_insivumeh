@@ -145,7 +145,8 @@ bottom=2cm
         \begin{tabular}{L{30pt}C{200pt}r}
             (f) & \rule{\linewidth}{0.1pt}  &   \\
                 & \@author                  &   \\
-                &                           &   \\
+                & Servicios \@serv          &   \\
+                & -INSIVUMEH-               &   \\
             \multicolumn{3}{p{0.98\linewidth}}{
                 \vspace{5pt}
                 El presente informe responde a lo estipulado en el
